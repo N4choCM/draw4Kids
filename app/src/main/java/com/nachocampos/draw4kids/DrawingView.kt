@@ -25,7 +25,8 @@ class DrawingView(context: Context,attrs:AttributeSet): View(context,attrs) {
     /**
      * A variable for canvas which will be initialized later and used.
      *
-     *The Canvas class holds the "draw" calls. To draw something, you need 4 basic components: A Bitmap to hold the pixels, a Canvas to host
+     * The Canvas class holds the "draw" calls. To draw something, you need 4 basic components:
+     * A Bitmap to hold the pixels, a Canvas to host
      * the draw calls (writing into the bitmap), a drawing primitive (e.g. Rect,
      * Path, text, Bitmap), and a paint (to describe the colors and styles for the
      * drawing)
@@ -74,7 +75,7 @@ class DrawingView(context: Context,attrs:AttributeSet): View(context,attrs) {
          * Draw the specified bitmap, with its top/left corner at (x,y), using the specified paint,
          * transformed by the current matrix.
          *
-         *If the bitmap and canvas have different densities, this function will take care of
+         * If the bitmap and canvas have different densities, this function will take care of
          * automatically scaling the bitmap to draw at the same density as the canvas.
          *
          * @param bitmap The bitmap to be drawn
