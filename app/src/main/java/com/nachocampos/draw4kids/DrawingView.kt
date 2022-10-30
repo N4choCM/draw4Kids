@@ -35,8 +35,24 @@ class DrawingView(context: Context,attrs:AttributeSet): View(context,attrs) {
 
     private val mPaths = ArrayList<CustomPath>() // ArrayList for Paths
 
+    private val mUndoPaths = ArrayList<CustomPath>()
+
     init {
         setUpDrawing()
+    }
+
+    fun onClickUndo(){
+        if(mPaths.size > 0){
+            mUndoPaths.add(mPaths.removeAt(mPaths.size -1))
+            invalidate()
+        }
+    }
+
+    fun onClickRedo(){
+        if(mUndoPaths.size > 0){
+            mPaths.add(mUndoPaths.last())
+            invalidate()
+        }
     }
 
     /**
