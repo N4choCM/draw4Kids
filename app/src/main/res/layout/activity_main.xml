@@ -27,6 +27,7 @@
             android:layout_height="match_parent"
             android:contentDescription="image"
             android:scaleType="centerCrop"
+            tools:src="@drawable/image"
             />
 
         <com.nachocampos.draw4kids.DrawingView
@@ -35,7 +36,6 @@
             android:layout_height="match_parent"
             android:background="#80FFFFFF" />
     </FrameLayout>
-    <!--TODO(Step 3 - We have added a onclick method as 'paintClicked' for all the image buttons which is further defined in MainActivity for selection from color pallet.)-->
     <LinearLayout
         android:id="@+id/ll_paint_colors"
         android:layout_width="wrap_content"
